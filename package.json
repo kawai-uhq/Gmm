@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "@types/ws": "^7.4.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "fontsource-roboto": "^4.0.0",
+    "js-file-download": "^0.4.12",
+    "next": "^10.0.5",
+    "node-addon-api": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "restana": "^4.8.1",
+    "typescript": "^4.1.3",
+    "ws": "^7.4.2"
+  },
+  "name": "gtbot",
+  "version": "0.1.0",
+  "description": "A Growtopia Bot coded for websites.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proxy": "node scripts/clean && cd proxy/src && tsc --project tsconfig.json && node out/proxy/src",
+    "buildProxy": "cd proxy/lib/ && node-gyp rebuild",
+    "buildSite": "cd web && next build",
+    "site": "cd web && next start -p 80",
+    "siteDev": "cd web && next dev -p 80",
+    "cors": "node cors/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexander9673/GTBot.git"
+  },
+  "keywords": [
+    "growtopia",
+    "gt",
+    "gtbot",
+    "bot",
+    "growtopiabot"
+  ],
+  "author": "Alexander9673",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Alexander9673/GTBot/issues"
+  },
+  "homepage": "https://github.com/Alexander9673/GTBot#readme"
+}
